@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ExpenseLayer.ExpenseEntity>
+
+@{
+    ViewBag.Title = "Expense_List";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    <link href="~/wwwroot/CSS/Site.css" rel="stylesheet" />
+}
+
+<h2 class="expense">Expense_List</h2>
+
+<p class="list1">
+    <a href="@Url.Action("Create","Expense")" class="btn btn-default">Create New</a>
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpenseId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExpenseAmount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpenseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpenseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { eid = item.ExpenseId }, new { @class = "text-success" }) |
+                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |*@
+                @Html.ActionLink("Delete", "Delete", new { eid = item.ExpenseId }, new { @class = "text-danger" },
+                new { onclick = "return confirm('Are you sure wants to delete?');" })
+            </td>
+        </tr>
+    }
+
+</table>
+<hr class="new1" />

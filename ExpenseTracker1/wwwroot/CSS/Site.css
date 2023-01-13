@@ -1,0 +1,103 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+h1 {
+    text-align: center;
+    color: rebeccapurple;
+    font-weight:200px;
+}
+/*.body-content {*/
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    /*background-image: url('../IMG/expense.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: auto;
+}*/
+/*.bg img{
+   
+   height:100%;
+    background-position:center ;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}*/
+.body-content {
+    background-color: mistyrose;
+}
+h2 .login{
+    color:black;
+
+}
+h1 .home{
+    color:white;
+}
+.login a{
+    color:cornsilk;
+  
+    font-weight:bold;
+}
+.signup a {
+    color: cornsilk;
+    font-weight: bold;
+}
+.btn{
+    color:white;
+    background-color:black;
+}
+.new1{
+    border:1px solid black;
+}
+/*img .bgimg {
+    height: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+}*/
+
+/*.form-control {
+    color: black;
+    background-color: #e9f7f7;
+}*/
+/*.container {
+    background-color: aliceblue;
+}
+*/
+
+h2 .expense{
+    color:black;
+    text-align:justify;
+}
+h4 .copy {
+    color: indigo;
+    font-weight: bold;
+}
+.list1 a{
+    color:cornsilk;
+    font-weight:bold;
+
+}
+.text-success{
+    font-weight:bold;
+}
+.text-danger{
+    font-weight:bold;
+}
+.limit{
+    color:black;
+}
+.category{
+    color:black;
+}
+body{
+    background-color:;
+}
+.navbar-inverse .navbar-brand{
+    color:#e8c0c0;
+}
+.navbar-inverse .navbar-nav li a {
+    color:#e8c0c0;
+}
