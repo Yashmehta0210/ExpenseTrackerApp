@@ -1,4 +1,4 @@
-# ExpenseTracker1
+# ExpenseTracker
 
 **Prerequisites**
   1. Visual Studio
